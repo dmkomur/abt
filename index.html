@@ -47,11 +47,26 @@
                     <h2 class="services__title">Tjenester</h2>
                     <ul class="services__list">
                         <li class="services__item">
-                            <h3>Prosjekt</h3>
+                            <h3 class="services__item__header">Prosjekt</h3>
                             <p>
                                 Vi har omfattende erfaring med små og store
                                 fornyelsesprosjekter for private og offentlige
                                 aktører
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <h3 class="services__item__header">Vedlikehold</h3>
+                            <p>
+                                Vi tilbyr løpende vedlikehold av uteområdet
+                                gjennom hele året for å sikre et varig resultat
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <h3 class="services__item__header">Lekeplass</h3>
+                            <p>
+                                Vi anlegger spennende lekeplasser og
+                                aktivitetsområder, og utfører vedlikehold og
+                                service
                             </p>
                         </li>
                     </ul>
@@ -64,15 +79,26 @@
                     <div class="gallery__grid">
                         <img
                             class="gallery__img"
-                            src="images/1.jpg"
-                            alt="Galleri bilde 1"
-                            onclick="openModal(this.src)"
+                            src="./assets/house.webp"
+                            alt="Galleri bilde 2"
+                            width="320"
                         />
                         <img
                             class="gallery__img"
-                            src="images/2.jpg"
+                            src="./assets/stairs.webp"
                             alt="Galleri bilde 2"
-                            onclick="openModal(this.src)"
+                            width="320"
+                        /><img
+                            class="gallery__img"
+                            src="./assets/alley.webp"
+                            alt="Galleri bilde 1"
+                            width="320"
+                        />
+                        <img
+                            class="gallery__img"
+                            src="./assets/terase.webp"
+                            alt="Galleri bilde 2"
+                            width="320"
                         />
                     </div>
                 </div>
@@ -81,22 +107,22 @@
             <section id="contact" class="section section--contact">
                 <div class="contact">
                     <h2 class="contact__title">Kontakt</h2>
-                    <p class="contact__item">
-                        E-post:
-                        <a class="contact__link" href="mailto:post@thronsen.no"
-                            >post@thronsen.no</a
-                        >
-                    </p>
-                    <p class="contact__item">Telefon: 958 13 260</p>
-                    <p class="contact__item">
+
+                    <a class="contact__item" href="mailto:post@thronsen.no"
+                        >E-post: post@thronsen.no</a
+                    >
+                    <a class="contact__item" href="tel:95813260">
+                        Telefon: 958 13 260
+                    </a>
+                    <a class="contact__item" href="geo:559.895759,10.555000">
                         Adresse: Nissedal, Vest Telemark og Bærum
-                    </p>
+                    </a>
                 </div>
             </section>
         </main>
 
         <!-- Modal -->
-        <div id="modal" class="modal" onclick="closeModal()">
+        <div id="modal" class="modal">
             <img class="modal__img" id="modal-img" src="" alt="Full view" />
         </div>
 

@@ -76,7 +76,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: clamp(20px, 4vh, 80px) clamp(16px, 6vw, 120px);
+        padding: clamp(68px, 4vh, 80px) clamp(16px, 6vw, 120px);
         text-align: center;
 }
 
@@ -184,23 +184,48 @@ body {
 
 .services__item {
         font-size: clamp(16px, 2.5vw, 22px);
-        margin-bottom: 1rem;
+}
+
+.services__item__header {
+        font-size: clamp(20px, 3vw, 28px);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+}
+
+.services__item__header::before,
+.services__item__header::after {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: var(--color-green);
+        border-radius: 50%;
+
 }
 
 /* Gallery */
 .section--gallery {
-        background: var(--color-green);
+        background-image:
+                linear-gradient(rgba(224, 226, 222, 0.6), rgba(215, 220, 218, 0.6)),
+                url('./assets/plan2x.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: var(--color-almost-white);
 }
 
 .gallery__title {
         font-size: clamp(24px, 4vw, 48px);
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+        color: var(--color-dark-green);
 }
 
 .gallery__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: clamp(8px, 2vw, 20px);
         margin-top: 2rem;
 }
@@ -225,15 +250,17 @@ body {
 
 .contact__title {
         font-size: clamp(24px, 4vw, 48px);
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
 }
 
-.contact__item,
-.contact__link {
+.contact__item {
+        display: block;
         font-size: clamp(16px, 2.5vw, 22px);
         color: var(--color-almost-white);
         text-decoration: none;
         margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
 }
 
 /* Modal */
