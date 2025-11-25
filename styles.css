@@ -61,6 +61,13 @@ body {
         transition: all var(--transition);
 }
 
+@media (max-width: 1024px) {
+        .header {
+                top: auto;
+                bottom: 16px;
+        }
+}
+
 /* Main scroll */
 .main {
         scroll-snap-type: y mandatory;
@@ -260,7 +267,25 @@ body {
         text-decoration: none;
         margin-bottom: 0.5rem;
         margin-bottom: 2rem;
-        cursor: pointer;
+
+        transition: all var(--transition);
+}
+
+.contact__item:hover,
+.contact__item:focus {
+        color: var(--color-green);
+        transition: all var(--transition);
+}
+
+.contact__item svg {
+        fill: var(--color-light-green);
+        transition: all var(--transition);
+}
+
+.contact__item svg:hover,
+.contact__item svg:focus {
+        fill: var(--color-green);
+        transition: all var(--transition);
 }
 
 /* Modal */
