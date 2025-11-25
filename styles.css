@@ -298,10 +298,14 @@ body {
         align-items: center;
         cursor: zoom-out;
         z-index: 200;
+        padding: 16px;
+        /* чтобы не прилегала вплотную */
 }
 
 .modal__img {
         max-width: 90vw;
         max-height: 90vh;
+        object-fit: contain;
         border-radius: var(--radius);
+        cursor: zoom-out;
 }
