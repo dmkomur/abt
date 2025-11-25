@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ABT Anleggsgartner – Landskapsarbeid og Vedlikehold</title>
+        <meta
+            name="description"
+            content="Profesjonelle tjenester innen landskapsdesign, vedlikehold og lekeplassbygging for private og offentlige prosjekter."
+        />
+        <meta
+            name="keywords"
+            content="landskaapdesign, hagevedlikehold, lekeplass, Anleggsgartner, Østlandet, Norge"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__link" href="#services">Tjenester</a>
+                <a class="header__link" href="#gallery">Galleri</a>
+                <a class="header__link" href="#contact">Kontakt</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section id="hero" class="section section--hero">
+                <div class="hero">
+                    <h1 class="hero__title">ABT Anleggsgartner A/S</h1>
+                    <p class="hero__subtitle">
+                        Profesjonell hagedesign og uteområder i hele Østlandet.
+                    </p>
+                </div>
+            </section>
+
+            <section id="services" class="section section--services">
+                <div class="services">
+                    <h2 class="services__title">Tjenester</h2>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <strong>Prosjekt:</strong> Erfaring med små og store
+                            prosjekter.
+                        </li>
+                        <li class="services__item">
+                            <strong>Vedlikehold:</strong> Løpende vedlikehold
+                            gjennom året.
+                        </li>
+                        <li class="services__item">
+                            <strong>Lekeplass:</strong> Anlegg og vedlikehold av
+                            lekeplasser.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="gallery" class="section section--gallery">
+                <div class="gallery">
+                    <h2 class="gallery__title">Galleri</h2>
+                    <div class="gallery__grid">
+                        <img
+                            class="gallery__img"
+                            src="images/1.jpg"
+                            alt="Galleri bilde 1"
+                            onclick="openModal(this.src)"
+                        />
+                        <img
+                            class="gallery__img"
+                            src="images/2.jpg"
+                            alt="Galleri bilde 2"
+                            onclick="openModal(this.src)"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section section--contact">
+                <div class="contact">
+                    <h2 class="contact__title">Kontakt</h2>
+                    <p class="contact__item">
+                        E-post:
+                        <a class="contact__link" href="mailto:post@thronsen.no"
+                            >post@thronsen.no</a
+                        >
+                    </p>
+                    <p class="contact__item">Telefon: 958 13 260</p>
+                    <p class="contact__item">
+                        Adresse: Nissedal, Vest Telemark og Bærum
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <img class="modal__img" id="modal-img" src="" alt="Full view" />
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
